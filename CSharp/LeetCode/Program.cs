@@ -9,36 +9,21 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
+            var list = new List<char>();
+            list.Add('a'); 
+            list.Add('b');
+            list.Add('b');
+            list.Add('b');
+            list.Add('a');
+            list.Add('a');
+            list.Add('a');
 
+            var index = list.LastIndexOf('a',2);
+
+            var test = new _003.Longest_Substring_Without_Repeating_Characters();
+            var re = test.LengthOfLongestSubstringList("abcabcbb");
 
         }
 
-        public int[] TwoSum(int[] nums, int target)
-        {
-            int i;
-            int j;
-            int k = nums.Length;
-            int temp;
-            for (i = 0; i < k; i++)
-            {
-                temp = nums[i];
-                for (j = i + 1; j < k; j++)
-                {
-                    if (temp + nums[j] == target)
-                    {
-                        return new int[] { i, j };
-                    }
-
-                }
-            }
-            return new int[] { 0, 0 };
-        }
-        public int[] TwoSumWithHash(int[] nums, int target)
-        {
-            Dictionary<int, int> map = new Dictionary<int, int>();
-
-
-            return new int[] { 0, 0 };
-        }
     }
 }
